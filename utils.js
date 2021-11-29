@@ -49,25 +49,21 @@ module.exports = {
     return result;
   },
 
-  let ,m1 = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-  ],
-  function:sumOfArray(arr),{
-    let result = 0;
-    for(let i = 0;i<arr.length;i++)
-    {
-        result += arr[i];
+  
+  sumOfEachRow:function(mt){
+    function sumOfArray(arr){
+      let result = 0;
+      for(let i = 0;i<arr.length;i++)
+      {
+          result += arr[i];
+      }
+      return result;
     }
-    return result;
-function sumOfEachRow(mt)
-{
     let resArr = [];
     for(let j = 0;j<mt.length;j++)
     {
         resArr.push(sumOfArray(mt[j]));
     }
     return resArr;
-}
+  }
 }
